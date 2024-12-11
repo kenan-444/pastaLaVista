@@ -40,7 +40,7 @@ body {
 .header__title {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
-    color: #b5651d;
+    color: #000000;
     letter-spacing: 2px;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .section__title {
     font-size: 2rem;
-    color: #b5651d;
+    color: #c97800;
     font-family: 'Cinzel', serif
 }
 
