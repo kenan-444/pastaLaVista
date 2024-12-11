@@ -13,11 +13,12 @@ body {
     text-align: center;
     background-color: #d4a373;
     padding: 20px;
-    border-bottom: 5px solid #006115;
+    border-bottom: 10px solid; 
+    border-image: linear-gradient(to right, green, white, red) 1;
 }
 .toggle-button {
     background: linear-gradient(#b5651d, #d4a373);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 5px 15px;
     font-size: 1rem;
