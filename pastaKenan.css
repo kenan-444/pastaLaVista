@@ -13,6 +13,7 @@ body {
     text-align: center;
     background-color: #d4a373;
     padding: 20px;
+    border-bottom: 5px solid #b5651d;
 }
 .toggle-button {
     background: linear-gradient(#b5651d, #d4a373);
@@ -24,6 +25,8 @@ body {
     border-radius: 15px;
     cursor: pointer;
 }
+
+
 .darkMode {
     background-color: #121212;
     color: white;
@@ -47,6 +50,7 @@ body {
 .header__img {
     width: 200px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .nav__list {
@@ -54,7 +58,7 @@ body {
     justify-content: center;
     list-style: none;
     background-color: #b5651d;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 10px;
     border-radius: 10px;
 }
@@ -62,21 +66,35 @@ body {
 .nav__link {
     text-decoration: none;
     color: white;
-    padding: 12px 20px;
+    padding: 12px 25px;
     font-size: 1.2rem;
     font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
+.nav__link:hover {
+    background-color: #5c350f;
+    transform: scale(1.05); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
 
 
 .section {
     padding: 40px 20px;
     text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .section__title {
-    font-size: 2rem;
-    color: #c97800;
-    font-family: 'Cinzel', serif
+    font-size: 2.5rem;
+    color: #b5651d;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .menu__list {
@@ -93,12 +111,20 @@ body {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    padding: 20px 0;
 }
 
 .gallery__img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery__img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .form {
