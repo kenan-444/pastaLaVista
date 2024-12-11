@@ -8,17 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('darkMode');
             document.body.classList.add('lightMode');
             toggleButton.textContent = '🌙 Mode Sombre';
-        
         } else {
             document.body.classList.remove('lightMode');
             document.body.classList.add('darkMode');
             toggleButton.textContent = '☀️ Mode Clair';
         }
     });
+
     const reservationForm = document.querySelector(".form");
+    
     reservationForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        alert("Réservation réussie ! Merci.");
-        reservationForm.reset(); 
+
+
+        const successMessage = document.createElement("p");
+        successMessage.textContent = "Merci pour votre réservation et à bientôt!";
+        successMessage.style.fontWeight = "bold";
+        reservationForm.appendChild(successMessage);
+
+        reservationForm.reset();
     });
 });
