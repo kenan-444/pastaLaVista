@@ -42,10 +42,16 @@ body {
 }
 
 .header__title {
-    font-family: 'Cinzel', serif;
-    font-size: 3rem;
-    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+    color: #000000;
     letter-spacing: 2px;
+}
+
+.header__p  {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: #000000;
 }
 
 .header__img {
